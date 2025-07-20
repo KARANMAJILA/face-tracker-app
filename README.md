@@ -70,26 +70,4 @@ Real-time face detection with video recording capabilities using React and face-
 4. Push to branch: `git push origin feature-name`
 5. Submit a Pull Request
 
-## License
 
-MIT License - see LICENSE file for details
-\`\`\`
-
-## Future Updates: Making Changes and Pushing
-
-After making changes to your code:
-
-```bash
-# Check what files changed
-git status
-
-# Add specific files or all files
-git add .
-# or
-git add src/components/VideoPlayer.js
-
-# Commit with descriptive message
-git commit -m "Fix video recording blank screen issue"
-
-# Push to GitHub
-git push origin main
