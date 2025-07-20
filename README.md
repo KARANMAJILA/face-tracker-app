@@ -1,36 +1,95 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Face Tracking Studio
 
-## Getting Started
+Real-time face detection with video recording capabilities using React and face-api.js.
 
-First, run the development server:
+## Features
+
+- ✅ Real-time face detection
+- ✅ Face bounding boxes with landmarks
+- ✅ Video recording with face overlays
+- ✅ Multiple video format support (WebM, MP4)
+- ✅ Download recorded videos
+- ✅ Responsive design
+
+## Technologies Used
+
+- React 18
+- face-api.js
+- MediaRecorder API
+- Canvas API
+- Tailwind CSS
+- Lucide React Icons
+
+## Installation
+
+1. Clone the repository:
+   \`\`\`bash
+   git clone https://github.com/USERNAME/REPO_NAME.git
+   cd REPO_NAME
+   \`\`\`
+
+2. Install dependencies:
+   \`\`\`bash
+   npm install
+   \`\`\`
+
+3. Download face-api.js models:
+   - Create a `public/models` folder
+   - Download models from [face-api.js models](https://github.com/justadudewhohacks/face-api.js/tree/master/weights)
+   - Place model files in `public/models/`
+
+4. Start development server:
+   \`\`\`bash
+   npm run dev
+   \`\`\`
+
+5. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Usage
+
+1. Allow camera permissions when prompted
+2. Wait for face detection models to load
+3. Position yourself in front of the camera
+4. Click "Start Recording" to begin recording
+5. Face detection boxes will appear around detected faces
+6. Click "Stop Recording" to finish
+7. Download your recorded videos
+
+## Browser Compatibility
+
+- Chrome 60+ (Recommended)
+- Firefox 55+
+- Safari 14+
+- Edge 79+
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch: `git checkout -b feature-name`
+3. Commit changes: `git commit -m 'Add feature'`
+4. Push to branch: `git push origin feature-name`
+5. Submit a Pull Request
+
+## License
+
+MIT License - see LICENSE file for details
+\`\`\`
+
+## Future Updates: Making Changes and Pushing
+
+After making changes to your code:
 
 ```bash
-npm run dev
+# Check what files changed
+git status
+
+# Add specific files or all files
+git add .
 # or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+git add src/components/VideoPlayer.js
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Commit with descriptive message
+git commit -m "Fix video recording blank screen issue"
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Push to GitHub
+git push origin main
